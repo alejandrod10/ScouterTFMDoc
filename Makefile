@@ -5,7 +5,9 @@ TEMPLATE = templates/uoc_eisvogel_3_1.tex
 FLAGS = -s --filter pandoc-include --filter pandoc-tablenos --filter pandoc-fignos --top-level-division=chapter
 BIBLIO = --citeproc
 
-all: demo
+all: src
+
+all-demo: demo
 
 clean:
 	find build -type f ! -name '.gitkeep' -delete
