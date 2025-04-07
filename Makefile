@@ -1,4 +1,4 @@
-.PHONY: clean demo latex report
+.PHONY: clean src latex report
 
 TEMPLATE = templates/uoc_eisvogel_3_1.tex
 

@@ -947,6 +947,10 @@ $endif$
 \end{flushleft}
 \end{titlepage}
 \restoregeometry
+\newpage
+\thispagestyle{empty} % Ensures the blank page has no headers/footers
+\mbox{} % Inserts an empty box to create the blank page
+\newpage
 \pagenumbering{arabic}
 $endif$
 
@@ -956,6 +960,8 @@ $endif$
 
 % --------
 % My own modifications on eisvogel template
+
+\cleardoublepage
 
 % Copyrigt
 \section*{Copyright}
@@ -967,27 +973,8 @@ This work is subject to a Attribution-NonCommercial-NoDerivatives 4.0 Internatio
 \href{https://creativecommons.org/licenses/by-nc-nd/4.0/}{https://creativecommons.org/licenses/by-nc-nd/4.0/}
 
 \newpage
-
-% Project sheet
-\section*{Final Project Sheet}
-
-\renewcommand{\arraystretch}{1.5}
-\newcommand{\graycell}{\cellcolor[HTML]{EFEFEF}}
-
-\begin{tabular}{| >{\raggedleft\arraybackslash} p{4cm}|p{10cm}|}
-\hline
-\textbf{Project title}      & \graycell $title$ \\ \hline
-\textbf{Author's name}      & \graycell $author$ \\ \hline
-\textbf{Tutor's name}       & \graycell $tutor$ \\ \hline
-\textbf{Submission date}    & \graycell $date$ \\ \hline
-\textbf{Degree}             & \graycell $degree$\\ \hline
-\textbf{Final Project area} & \graycell $area$ \\ \hline
-\textbf{Language}           & \graycell $language$ \\ \hline
-\textbf{Keywords}           & \graycell $keywords$ \\ \hline
-\multicolumn{2}{|p{14cm}|}{\textbf{Abstract}} \\ \hline
-\multicolumn{2}{|p{14.5cm}|}{\cellcolor[HTML]{EFEFEF}$abstract$} \\ \hline
-\end{tabular}
-
+\thispagestyle{empty} % Ensures the blank page has no headers/footers
+\mbox{} % Inserts an empty box to create the blank page
 \newpage
 
 % Acknowledgement
@@ -997,21 +984,28 @@ $if(acknowledgements)$
 $acknowledgements$
 
 \newpage
+\thispagestyle{empty} % Ensures the blank page has no headers/footers
+\mbox{} % Inserts an empty box to create the blank page
+\newpage
 $endif$
 
 % Abstract
-$if(abstract)$
 \section*{Abstract}
 
-$abstract$
+Scouter and Jared are two tools designed to streamline software release management, code quality verification, and project visualization. 
+
+Scouter automates release candidate preparation, version updates, and branch merging while performing internal and external checks such as linting, static analysis, dependency validation, and CI/CD pipeline verification. It integrates seamlessly with Jenkins, Bitbucket, and SonarQube to ensure code quality and stability.
+
+Jared, the visualization tool, provides an interactive dashboard to display project insights with color-coded issue detection, allowing teams to quickly identify and address critical problems. Together, these tools enhance automation, improve project reliability, and simplify software development workflows.
 
 \newpage
-$endif$
+\thispagestyle{empty} % Ensures the blank page has no headers/footers
+\mbox{} % Inserts an empty box to create the blank page
+\newpage
 
 
 % Make sure we start on an odd page
 % \thispagestyle{empty}
-\cleardoublepage
 
 % End of my own modifications
 % ------

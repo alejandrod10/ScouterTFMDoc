@@ -30,6 +30,13 @@ header-includes:
     - \setkeys{Gin}{width=0.5\textwidth, keepaspectratio}   # Default image width and aspec ratio
     - \usepackage{setspace}                                 # Load setspace package
     - \setstretch{1.0}                                      # Set line spacing to 1.0 (single line spacing)
+abstract: "
+    Scouter and Jared are two tools designed to streamline software release management, code quality verification, and project visualization. 
+    
+    Scouter automates release candidate preparation, version updates, and branch merging while performing internal and external checks such as linting, static analysis, dependency validation, and CI/CD pipeline verification. It integrates seamlessly with Jenkins, Bitbucket, and SonarQube to ensure code quality and stability.
+
+    Jared, the visualization tool, provides an interactive dashboard to display project insights with color-coded issue detection, allowing teams to quickly identify and address critical problems. Together, these tools enhance automation, improve project reliability, and simplify software development workflows.
+    "
 ...
 
 

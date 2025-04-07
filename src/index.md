@@ -1,32 +1,49 @@
 ---
-title: "Example PDF"
-author: "Super Mario"
+title: "Enhancing Software Development Workflows and Repository Health with Scouter and Jared"
+author: [Alejandro Durán]
 date: "\\today"
-tutor: "Luigi"
-keywords: "ML, RL et al."
-degree: "Master's Degree in Video Game Design and Programming"
-area: "The area"
-language: "English"
-abstract: "
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+subject: "Markdown"
+keywords: [Markdown, Example]
+book: true
+classoption: [twoside]
+titlepage: true
+toc: true
+toc-depth: 1
+lof: true
+lot: true
+numbersections: true
+fontsize: 11pt
+fontfamily: cmbright
+header-left: "\\thetitle"
+header-center: "\\hspace{0cm}"
+header-right: "\\hspace{0cm}"
+footer-left: "\\hspace{0cm}"
+footer-center: "\\hspace{0cm}"
+footer-right: "\\thepage"
+caption-justification: centering
+biblatex: true
+bibliography: src/references.bib
+csl: templates/ieee.csl
+header-includes:
+    - \usepackage{microtype}                                # Tweak font spacing for aesthetics
+    - \usepackage[T1]{fontenc}                              # 8-bit encoding with 256 glyphs
+    - \setkeys{Gin}{width=0.5\textwidth, keepaspectratio}   # Default image width and aspec ratio
+    - \usepackage{setspace}                                 # Load setspace package
+    - \setstretch{1.25}                                      # Set line spacing to 1.25 (single line spacing)
 
-    \\par
+...
 
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    "
-acknowledgements: "
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    \\par
+!include src/context.md
 
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    "
----
+!include src/justification.md
 
-!include src/introduction.md
+!include src/scope.md
 
-!include src/text.md
+!include src/methodology.md
 
-!include src/tables.md
+!include src/planning.md
 
-!include src/equations.md
+!include src/budget.md
+
+# Bibliography
